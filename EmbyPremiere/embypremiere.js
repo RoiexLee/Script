@@ -5,10 +5,11 @@ if ($request.url.indexOf('mb3admin.com/admin/service/registration/validateDevice
             status: 200,
             headers: $response.headers,
             body: '{"cacheExpirationDays": 999, "resultCode": "GOOD", "message": "Device Valid", "isPremiere": true}'
-        })
+        });
     } else {
-        $done({})
+        $notification.post("Emby Premiere Expired!");
+        $done({});
     }
 } else {
-    $done({})
+    $done({});
 }
