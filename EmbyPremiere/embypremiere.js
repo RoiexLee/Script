@@ -1,3 +1,4 @@
+$notification.post("Emby Premiere Script Start!");
 if ($request.url.indexOf('mb3admin.com/admin/service/registration/validateDevice') !== -1) {
     if ($response.status !== 200) {
         $notification.post("Emby Premiere Unlocked!");
@@ -11,5 +12,7 @@ if ($request.url.indexOf('mb3admin.com/admin/service/registration/validateDevice
         $done({});
     }
 } else {
+    $notification.post("Emby Premiere Error!");
     $done({});
 }
+$notification.post("Emby Premiere Script End!");
