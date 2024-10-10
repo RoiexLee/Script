@@ -1,0 +1,17 @@
+name: EmbyPremiere
+desc: Unlock Emby Premiere.
+
+http:
+  mitm:
+    - mb3admin.com
+  script:
+    - match: ^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice
+      name: EmbyPremiere
+      type: response
+      require-body: true
+      timeout: 10
+
+script-providers:
+  Emby Premiere:
+    url: https://raw.githubusercontent.com/RoiexLee/Script/refs/heads/main/EmbyPremiere/embypremiere.js
+    interval: 86400
