@@ -1,5 +1,5 @@
 name: EmbyPremiere
-desc: Unlock Emby Premiere.
+desc: Unlock Emby Premiere
 
 http:
   mitm:
