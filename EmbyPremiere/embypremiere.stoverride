@@ -12,6 +12,6 @@ http:
       timeout: 10
 
 script-providers:
-  Emby Premiere:
+  EmbyPremiere:
     url: https://raw.githubusercontent.com/RoiexLee/Script/refs/heads/main/EmbyPremiere/embypremiere.js
     interval: 86400
