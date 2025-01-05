@@ -1,0 +1,22 @@
+proxy-groups: 
+  - name: TikTok
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/TikTok.png
+    type: select
+    proxies:
+      - 自动选择
+      - 手动选择
+      - HK 香港
+      - TW 台湾
+      - SG 新加坡
+      - JP 日本
+      - US 美国
+      - DIRECT
+rules:
+  # TikTok
+  - RULE-SET,TikTok,TikTok
+rule-providers:
+  TikTok:
+    behavior: domain
+    format: text
+    interval: 86400
+    url: https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Surge/TikTok.list
